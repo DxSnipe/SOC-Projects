@@ -175,6 +175,7 @@ password spraying, or credential stuffing.
 
 # Project Structure
 
+```text
 windows-bruteforce-detection-wazuh/
 |
 ├── README.md
@@ -193,7 +194,7 @@ windows-bruteforce-detection-wazuh/
 |
 └── mitre/
     └── mitre-mapping.md
-
+```
 
 # Skills Demonstrated
 
