@@ -31,7 +31,7 @@ These events were successfully collected by the Wazuh agent and
 displayed in the Wazuh dashboard.
 
 ## Observed Fields
-
+```text
 | Field                  | Observed Value |
 | Event ID               |      4625      |
 | Target Username        | Administrator  |
@@ -45,7 +45,7 @@ displayed in the Wazuh dashboard.
 | Subject Logon ID       | 0x0            |
 | Target Logon ID        | 0xe00be7       |
 | Process ID             | 728            |
-
+```
 
 ### Field Analysis
 
