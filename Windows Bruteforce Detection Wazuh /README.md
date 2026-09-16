@@ -22,6 +22,7 @@ The project demonstrates the complete SOC workflow:
 
 ## Lab Architecture
 
+```text
 Kali Linux
     |
     | Authentication attempts
@@ -44,6 +45,8 @@ SOC Analyst
     +--> Timeline Analysis
     +--> MITRE ATT&CK Mapping
     +--> Incident Report
+```
+
 
 # Environment
 
