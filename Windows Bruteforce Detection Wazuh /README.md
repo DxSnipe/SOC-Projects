@@ -115,6 +115,7 @@ Therefore, the evidence does not independently establish that the successful aut
 
 The investigation followed this sequence:
 
+```text
 Multiple authentication attempts
             |
             v
@@ -135,6 +136,7 @@ Account Lockout
             v
 Event ID 4624
 Successful Network Authentication
+```
 
 The Wazuh detection was classified as a True Positive for the behavior the detection rule was designed to identify 
 multiple Windows logon failures
