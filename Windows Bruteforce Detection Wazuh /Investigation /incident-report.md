@@ -229,9 +229,9 @@ Privilege escalation
 
 Therefore, the investigation should not claim compromise solely from the observed authentication events.
 
-# 12. Recommended SOC Response
+# 12. Response
 
-In a production environment, an L1 analyst could:
+In a production environment, analyst could:
 
 Validate whether the source IP is authorized.
 Confirm whether the target account should be used for
