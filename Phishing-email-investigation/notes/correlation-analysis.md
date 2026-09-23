@@ -2,19 +2,13 @@
 
 ## 1. Email Identity
 
-The email uses the display name:
+The email uses the display name: `"Microsoft Account Team"`
 
-"Microsoft Account Team"
-
-The actual sender address is:
-
-noreply@microsoftonline-verify.com
+The actual sender address is: `noreply@microsoftonline-verify.com`
 
 The sender domain does not correspond to Microsoft's legitimate domain infrastructure.
 
-Subject:
-
-[Action Required] Unusual sign-in activity on your account
+Subject: `[Action Required] Unusual sign-in activity on your account`
 
 The subject uses account-security urgency to encourage the recipient to take action.
 
@@ -37,25 +31,15 @@ Authentication results indicate that the message did not successfully authentica
 
 ## 3. Sender Infrastructure
 
-Sending IP:
+Sending IP: `178.238.225.91`
 
-178.238.225.91
+Reverse DNS: `vmi3247644.contaboserver.net`
 
-Reverse DNS:
+Received hostname: `vps-291847.contabo.net`
 
-vmi3247644.contaboserver.net
+Network: `Contabo GmbH`
 
-Received hostname:
-
-vps-291847.contabo.net
-
-Network:
-
-Contabo GmbH
-
-ASN:
-
-AS51167
+ASN: `AS51167`
 
 The sending infrastructure was hosted within a commercial hosting provider network.
 
@@ -65,21 +49,13 @@ The hosting provider itself is not considered malicious based solely on this evi
 
 ## 4. Sender Domain
 
-Domain:
+Domain: `microsoftonline-verify.com`
 
-microsoftonline-verify.com
+Current DNS status: `NXDOMAIN`
 
-Current DNS status:
+Current A/MX/TXT/NS records: `Not available`
 
-NXDOMAIN
-
-Current A/MX/TXT/NS records:
-
-Not available
-
-Current Verisign RDAP query:
-
-HTTP 404
+Current Verisign RDAP query: `HTTP 404`
 
 The domain was used in the original email dated February 6, 2026, but is currently not resolving.
 
@@ -89,13 +65,9 @@ The current inactive state does not establish the historical registration or DNS
 
 ## 5. URL Investigation
 
-URL:
+URL: `https://bit.ly/3vF9xKz`
 
-https://bit.ly/3vF9xKz
-
-URL type:
-
-Shortened URL
+URL type: `Shortened URL`
 
 URLScan:
 
@@ -149,9 +121,7 @@ No endpoint compromise has been established from the available email evidence.
 
 ## 8. Provisional Classification
 
-Classification:
-
-PHISHING — HIGH CONFIDENCE
+Classification: `PHISHING — HIGH CONFIDENCE`
 
 Rationale:
 
