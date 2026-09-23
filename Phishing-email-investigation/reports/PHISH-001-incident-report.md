@@ -40,17 +40,11 @@ No evidence currently establishes that the recipient clicked the URL, submitted 
 
 ### Sender
 
-Display name:
+Display name: `Microsoft Account Team`
 
-Microsoft Account Team
+Sender: `noreply@microsoftonline-verify.com`
 
-Sender:
-
-noreply@microsoftonline-verify.com
-
-Return-Path:
-
-noreply@microsoftonline-verify.com
+Return-Path: `noreply@microsoftonline-verify.com`
 
 The sender domain uses Microsoft-related terminology while not being Microsoft's legitimate domain.
 
@@ -66,39 +60,27 @@ The subject creates urgency around account security and attempts to encourage th
 
 ### SPF
 
-Result:
+Result: `FAIL`
 
-FAIL
-
-The sending IP:
-
-178.238.225.91
-
-was not authorized by the SPF policy associated with the sender domain.
+The sending IP: `178.238.225.91` was not authorized by the SPF policy associated with the sender domain.
 
 ### DKIM
 
-Result:
-
-FAIL
+Result: `FAIL`
 
 Authentication results showed:
-
+`
 header.i=@microsoftonline-verify.com
 header.s=default
 header.b=none
-
+`
 No successful DKIM authentication was established.
 
 ### DMARC
 
-Result:
+Result: `FAIL`
 
-FAIL
-
-Authentication results showed:
-
-header.from=microsoftonline-verify.com
+Authentication results showed: `header.from=microsoftonline-verify.com`
 
 DMARC evaluation failed.
 
@@ -112,25 +94,15 @@ This provides strong evidence that the message did not successfully authenticate
 
 ## 5. Sender Infrastructure
 
-Sending IP:
+Sending IP: `178.238.225.91`
 
-178.238.225.91
+Received hostname: `vps-291847.contabo.net`
 
-Received hostname:
+Reverse DNS: `vmi3247644.contaboserver.net`
 
-vps-291847.contabo.net
+Hosting provider: `Contabo GmbH`
 
-Reverse DNS:
-
-vmi3247644.contaboserver.net
-
-Hosting provider:
-
-Contabo GmbH
-
-ASN:
-
-AS51167
+ASN: `AS51167`
 
 WHOIS information places the IP within Contabo infrastructure.
 
@@ -140,13 +112,9 @@ The hosting provider itself is not considered malicious based solely on this evi
 
 ## 6. Sender Domain Investigation
 
-Domain:
+Domain: `microsoftonline-verify.com`
 
-microsoftonline-verify.com
-
-Current DNS status:
-
-NXDOMAIN
+Current DNS status: `NXDOMAIN`
 
 Current records:
 
@@ -155,9 +123,7 @@ Current records:
 - TXT: None
 - NS: None
 
-Current Verisign RDAP query:
-
-HTTP 404
+Current Verisign RDAP query: `HTTP 404`
 
 The domain was present in the February 6, 2026 email but is currently not resolving.
 
@@ -167,13 +133,9 @@ The current state cannot establish the historical registration or DNS state of t
 
 ## 7. URL Investigation
 
-Extracted URL:
+Extracted URL: `https://bit.ly/3vF9xKz`
 
-https://bit.ly/3vF9xKz
-
-URL type:
-
-Shortened URL
+URL type: `Shortened URL`
 
 ### URLScan
 
@@ -228,9 +190,7 @@ Evidence:
 
 The email contains a shortened URL intended to direct the recipient to an external web resource.
 
-Confidence:
-
-High
+Confidence: High
 
 ### T1036.005 — Masquerading: Match Legitimate Name or Location
 
@@ -238,9 +198,7 @@ Evidence:
 
 The sender uses the display name "Microsoft Account Team" and a Microsoft-themed sender domain.
 
-Confidence:
-
-Medium
+Confidence: Medium
 
 No additional techniques were mapped because the available evidence does not establish credential theft, malware execution, account compromise, persistence, or data exfiltration.
 
@@ -285,7 +243,7 @@ Taken together, these findings are consistent with a phishing email designed to 
 
 ---
 
-## 12. Incident Response Recommendations
+## 12. Incident Response
 
 ### Containment
 
@@ -340,9 +298,7 @@ The investigation has several limitations:
 
 ## 14. Final Assessment
 
-Classification:
-
-PHISHING — HIGH CONFIDENCE
+Classification: `PHISHING — HIGH CONFIDENCE`
 
 The available evidence strongly supports classification of PHISH-001 as a phishing email.
 
