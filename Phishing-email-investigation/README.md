@@ -79,7 +79,6 @@ Incident Response
       ↓
 Final Assessment
 ```
-
 ## Email Authentication Findings
 
 | Control | Result |
@@ -87,53 +86,42 @@ Final Assessment
 | SPF     | FAIL   |
 | DKIM    | FAIL   |
 | DMARC   | FAIL   |
+
 All three authentication mechanisms failed for the investigated message.
 
 ## Sender Infrastructure
 
-Sender IP:
+Sender IP: `178.238.225.91 `
 
-178.238.225.91
+Reverse DNS: `vmi3247644.contaboserver.net`
 
-Reverse DNS:
+Received hostname: `vps-291847.contabo.net`
 
-vmi3247644.contaboserver.net
+Network provider: `Contabo GmbH`
 
-Received hostname:
-
-vps-291847.contabo.net
-
-Network provider:
-
-Contabo GmbH
-
-ASN:
-
-AS51167
+ASN: `AS51167`
 
 The IP was associated with commercial hosting infrastructure. The hosting provider itself was not classified as malicious based solely on this evidence.
 
 ## URL Investigation
 
-Extracted URL:
-
-https://bit.ly/3vF9xKz
+Extracted URL: `https://bit.ly/3vF9xKz`
 
 ### URLScan
 
-Current result: HTTP 404
-Redirects captured: None
-Main domain: bit.ly
-Main IP: 67.199.248.11
-ASN: AS396982
-Verdict: No classification
+- Current result: HTTP 404
+- Redirects captured: None
+- Main domain: bit.ly
+- Main IP: 67.199.248.11
+- ASN: AS396982
+- Verdict: No classification
 
 ### VirusTotal
 
-Detection: 1/91 security vendors
-Flagging vendor: Phishing Database
-Classification: Phishing
-Current status: 404
+- Detection: 1/91 security vendors
+- Flagging vendor: Phishing Database
+- Classification: Phishing
+- Current status: 404
 
 The original destination of the shortened URL could not be recovered from the current URLScan scan.
 
@@ -141,15 +129,15 @@ The original destination of the shortened URL could not be recovered from the cu
 
 The investigation identified multiple related indicators:
 
-Microsoft impersonation
-Microsoft-themed sender domain
-SPF failure
-DKIM failure
-DMARC failure
-Suspicious sender infrastructure
-Account-security urgency
-Shortened URL
-Supporting phishing reputation data from VirusTotal
+- Microsoft impersonation
+- Microsoft-themed sender domain
+- SPF failure
+- DKIM failure
+- DMARC failure
+- Suspicious sender infrastructure
+- Account-security urgency
+- Shortened URL
+- Supporting phishing reputation data from VirusTotal
 
 The combined evidence supports classification of the email as a phishing attempt.
 
@@ -164,37 +152,36 @@ Techniques not supported by evidence were intentionally excluded.
 
 ## Incident Response
 
-Recommended SOC actions:
+### Recommended actions:
 
-Quarantine the phishing email.
-Search for related messages across mailboxes.
-Hunt for the identified IOCs.
-Determine whether the recipient clicked the URL.
-Determine whether credentials were submitted.
-Review authentication activity if interaction occurred.
-Review endpoint, DNS, proxy, and EDR telemetry if the URL was accessed.
-Reset credentials and revoke sessions if compromise is confirmed.
+1. Quarantine the phishing email.
+2. Search for related messages across mailboxes.
+3. Hunt for the identified IOCs.
+4. Determine whether the recipient clicked the URL.
+5. Determine whether credentials were submitted.
+6. Review authentication activity if interaction occurred.
+7. Review endpoint, DNS, proxy, and EDR telemetry if the URL was accessed.
+8. Reset credentials and revoke sessions if compromise is confirmed.
 
 ## Final Assessment
 
-Classification: PHISHING — HIGH CONFIDENCE
+### Classification: PHISHING — HIGH CONFIDENCE
 
 The available evidence strongly supports classification of PHISH-001 as a phishing email.
 
 However:
 
-User interaction is unknown.
-Credential compromise is not established.
-Endpoint compromise is not established.
-The original Bitly destination could not be recovered.
-Current DNS state does not establish historical DNS state.
-VirusTotal's displayed phishing classification occurred after the original email date.
+- User interaction is unknown.
+- Credential compromise is not established.
+- Endpoint compromise is not established.
+- The original Bitly destination could not be recovered.
+- Current DNS state does not establish historical DNS state.
+- VirusTotal's displayed phishing classification occurred after the original email date.
 
 Further organizational telemetry would be required to determine whether the campaign resulted in successful user interaction or compromise.
 
 ## Project Structure
-
-```text
+```
 phishing-email-investigation/
 │
 ├── README.md
@@ -220,3 +207,4 @@ phishing-email-investigation/
 └── reports/
     └── PHISH-001-incident-report.md
 ```
+
