@@ -1,12 +1,8 @@
 # URL Analysis — PHISH-001
 
-## Extracted URL
+### Extracted URL : https://bit.ly/3vF9xKz
 
-https://bit.ly/3vF9xKz
-
-## URL Type
-
-Shortened URL
+### URL Type : Shortened URL
 
 ## URLScan Investigation
 
@@ -32,9 +28,7 @@ Historical redirect information could not be established from the current URLSca
 
 ## VirusTotal Analysis
 
-Exact URL submitted:
-
-https://bit.ly/3vF9xKz
+Exact URL submitted: `https://bit.ly/3vF9xKz`
 
 VirusTotal findings:
 
