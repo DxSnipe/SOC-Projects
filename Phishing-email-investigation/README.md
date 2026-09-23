@@ -4,7 +4,7 @@ A SOC L1-style phishing email investigation focused on email header analysis, au
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Investigate a suspicious email impersonating Microsoft and determine whether the available evidence supports classification as a phishing attempt.
 
@@ -12,7 +12,7 @@ The investigation was performed using the original `.eml` evidence and passive a
 
 ---
 
-## 🧪 Investigation Scenario
+## Investigation Scenario
 
 The email presents itself as a Microsoft account-security notification.
 
@@ -32,7 +32,7 @@ The message contains a shortened Bitly URL.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - Linux
 - Bash
@@ -50,7 +50,7 @@ The message contains a shortened Bitly URL.
 
 ---
 
-## 🔎 Investigation Workflow
+## Investigation Workflow
 
 ```text
 Email Evidence
@@ -89,7 +89,7 @@ Final Assessment
 | DMARC   | FAIL   |
 All three authentication mechanisms failed for the investigated message.
 
-Sender Infrastructure
+## Sender Infrastructure
 
 Sender IP:
 
@@ -113,20 +113,23 @@ AS51167
 
 The IP was associated with commercial hosting infrastructure. The hosting provider itself was not classified as malicious based solely on this evidence.
 
-URL Investigation
+## URL Investigation
 
 Extracted URL:
 
 https://bit.ly/3vF9xKz
 
-URLScan
+### URLScan
+
 Current result: HTTP 404
 Redirects captured: None
 Main domain: bit.ly
 Main IP: 67.199.248.11
 ASN: AS396982
 Verdict: No classification
-VirusTotal
+
+### VirusTotal
+
 Detection: 1/91 security vendors
 Flagging vendor: Phishing Database
 Classification: Phishing
@@ -134,7 +137,7 @@ Current status: 404
 
 The original destination of the shortened URL could not be recovered from the current URLScan scan.
 
-Evidence Correlation
+## Evidence Correlation
 
 The investigation identified multiple related indicators:
 
@@ -159,7 +162,7 @@ The combined evidence supports classification of the email as a phishing attempt
 
 Techniques not supported by evidence were intentionally excluded.
 
-Incident Response
+## Incident Response
 
 Recommended SOC actions:
 
@@ -172,7 +175,7 @@ Review authentication activity if interaction occurred.
 Review endpoint, DNS, proxy, and EDR telemetry if the URL was accessed.
 Reset credentials and revoke sessions if compromise is confirmed.
 
-Final Assessment
+## Final Assessment
 
 Classification: PHISHING — HIGH CONFIDENCE
 
