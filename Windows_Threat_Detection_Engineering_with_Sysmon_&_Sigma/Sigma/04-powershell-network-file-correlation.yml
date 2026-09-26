@@ -1,0 +1,21 @@
+title: PowerShell Network Connection Followed by File Creation
+id: 6c8f2a41-93d7-4b65-ae12-57f0c9d81b34
+status: experimental
+description: Correlates a PowerShell network connection with subsequent file creation from the same PowerShell process.
+author: Vishal
+date: 2026-09-26
+
+correlation:
+    type: temporal_ordered
+    rules:
+        - powershell_network_connection
+        - powershell_file_creation
+    group-by:
+        - ProcessGuid
+    timespan: 5m
+
+level: medium
+
+tags:
+    - attack.command_and_control
+    - attack.t1105

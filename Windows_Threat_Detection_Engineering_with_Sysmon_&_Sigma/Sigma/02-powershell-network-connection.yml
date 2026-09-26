@@ -1,0 +1,40 @@
+title: PowerShell Network Connection
+name: powershell_network_connection
+id: 91b3d5e7-6c21-4a9f-8d53-2e74c6b1a908
+status: experimental
+description: Detects outbound TCP network connections initiated by PowerShell.
+author: Vishal
+date: 2026-09-26
+
+logsource:
+    category: network_connection
+    product: windows
+
+detection:
+    selection:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+        Protocol: 'tcp'
+        Initiated: 'true'
+
+    condition: selection
+
+fields:
+    - Image
+    - User
+    - SourceIp
+    - SourcePort
+    - DestinationIp
+    - DestinationHostname
+    - DestinationPort
+
+falsepositives:
+    - Legitimate PowerShell administration
+    - PowerShell scripts accessing web services
+    - Software management and automation
+
+level: low
+
+tags:
+    - attack.command_and_control

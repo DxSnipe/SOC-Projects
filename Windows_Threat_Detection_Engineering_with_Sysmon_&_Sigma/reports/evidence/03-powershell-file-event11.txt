@@ -1,0 +1,9 @@
+File created:
+RuleName: -
+UtcTime: 2026-09-26 08:18:19.828
+ProcessGuid: {73915500-7bf3-6ab7-3801-000000006f00}
+ProcessId: 6300
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+TargetFilename: C:\SOC-Project3\download-test-3.html
+CreationUtcTime: 2026-09-26 07:12:09.556
+User: EC2AMAZ-V1OPH8C\Administrator

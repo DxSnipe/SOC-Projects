@@ -1,0 +1,19 @@
+Network connection detected:
+RuleName: -
+UtcTime: 2026-09-26 08:18:18.451
+ProcessGuid: {73915500-7bf3-6ab7-3801-000000006f00}
+ProcessId: 6300
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+User: EC2AMAZ-V1OPH8C\Administrator
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 172.31.5.141
+SourceHostname: EC2AMAZ-V1OPH8C.ap-south-1.compute.internal
+SourcePort: 57461
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 104.20.23.154
+DestinationHostname: -
+DestinationPort: 443
+DestinationPortName: https

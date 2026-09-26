@@ -1,0 +1,12 @@
+Detection: Windows Failed Logons
+Event ID: 4625
+Logon Type: 3
+Failure Reason: Unknown user name or bad password
+Observed Source IP: 152.58.114.63
+Observed Target Account: Administrator
+
+Validation:
+Multiple Event ID 4625 events were observed from the same source IP within short time intervals. The telemetry was used to validate the Sigma detection logic.
+
+Note:
+The historical events are treated as detection-test telemetry. The evidence alone does not establish that the observed activity was malicious.

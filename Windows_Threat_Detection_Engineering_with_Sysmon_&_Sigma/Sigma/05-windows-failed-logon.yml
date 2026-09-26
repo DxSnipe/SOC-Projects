@@ -1,0 +1,44 @@
+title: Windows Failed Network Logon
+name: windows_failed_network_logon
+id: 5f6c2a91-83d4-4e7b-a215-9d4c8f7b3e62
+status: experimental
+description: Detects Windows Security Event ID 4625 failures for network logons where the failure reason indicates an invalid username or password.
+author: Vishal
+date: 2026-09-26
+
+logsource:
+    product: windows
+    service: security
+    definition: 'Event ID 4625'
+
+detection:
+    selection:
+        EventID: 4625
+        LogonType: 3
+        FailureReason|contains:
+            - 'Unknown user name or bad password'
+
+    condition: selection
+
+fields:
+    - TargetUserName
+    - TargetDomainName
+    - LogonType
+    - FailureReason
+    - Status
+    - SubStatus
+    - WorkstationName
+    - IpAddress
+    - AuthenticationPackageName
+
+falsepositives:
+    - Users entering incorrect passwords
+    - Automated services with invalid credentials
+    - Misconfigured applications
+    - Administrative activity
+
+level: medium
+
+tags:
+    - attack.credential_access
+    - attack.t1110

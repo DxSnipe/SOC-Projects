@@ -1,0 +1,29 @@
+Detection: PowerShell Network Connection Followed by File Creation
+
+Network Event:
+Event ID: 3
+UtcTime: 2026-09-26 08:18:18.451
+ProcessGuid: {73915500-7bf3-6ab7-3801-000000006f00}
+ProcessId: 6300
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Protocol: tcp
+Initiated: true
+DestinationIp: 104.20.23.154
+DestinationPort: 443
+
+File Creation Event:
+Event ID: 11
+UtcTime: 2026-09-26 08:18:19.828
+ProcessGuid: {73915500-7bf3-6ab7-3801-000000006f00}
+ProcessId: 6300
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+TargetFilename: C:\SOC-Project3\download-test-3.html
+
+Correlation:
+Both events share the same ProcessGuid.
+The Event ID 11 timestamp occurs 1.377 seconds after Event ID 3.
+The observed sequence falls within the Sigma correlation rule's five-minute timespan.
+
+Validation:
+The correlation logic was manually validated against the observed Sysmon telemetry.
+A Sigma correlation engine was not used for runtime execution.

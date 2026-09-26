@@ -1,0 +1,36 @@
+title: PowerShell File Creation
+name: powershell_file_creation
+id: 4a82d7f1-5c39-46b0-9e13-71d4f6c2a805
+status: experimental
+description: Detects files created by PowerShell processes.
+author: Vishal
+date: 2026-09-26
+
+logsource:
+    category: file_event
+    product: windows
+
+detection:
+    selection:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+
+    condition: selection
+
+fields:
+    - Image
+    - TargetFilename
+    - User
+    - ProcessId
+
+falsepositives:
+    - Legitimate PowerShell scripts creating files
+    - Administrative automation
+    - Software management scripts
+
+level: low
+
+tags:
+    - attack.command_and_control
+    - attack.t1105

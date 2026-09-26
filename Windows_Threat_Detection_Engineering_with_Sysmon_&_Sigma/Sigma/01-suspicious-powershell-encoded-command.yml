@@ -1,0 +1,41 @@
+title: Suspicious PowerShell Encoded Command
+id: 7d2a9e9e-4b45-4f5c-8f31-6c1e8f7b2a11
+status: experimental
+description: Detects PowerShell process creation events containing the EncodedCommand parameter.
+author: Vishal
+date: 2026-09-26
+
+logsource:
+    category: process_creation
+    product: windows
+
+detection:
+    selection_image:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+
+    selection_encoded:
+        CommandLine|contains:
+            - ' -EncodedCommand '
+            - ' -EncodedCommand:'
+            - ' /EncodedCommand '
+
+    condition: selection_image and selection_encoded
+
+fields:
+    - Image
+    - CommandLine
+    - ParentImage
+    - ParentCommandLine
+    - User
+
+falsepositives:
+    - Legitimate administrative scripts using encoded PowerShell commands
+    - Enterprise automation using encoded PowerShell commands
+
+level: medium
+
+tags:
+    - attack.execution
+    - attack.t1059.001
