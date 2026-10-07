@@ -54,4 +54,4 @@ No containment was required.
 ## Closure
 The DNS → HTTPS behavioral chain was successfully captured and investigated. The incident identified an opportunity to improve network and DNS correlation in Wazuh.
 
-## Status: Closed
+**Status: Closed**
