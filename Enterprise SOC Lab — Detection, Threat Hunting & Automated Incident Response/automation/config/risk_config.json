@@ -1,0 +1,19 @@
+{
+    "scores": {
+        "brute_force": 2,
+        "authentication_failure": 1,
+        "powershell": 2,
+        "encoded_powershell": 3,
+        "sha256": 2,
+        "url": 2,
+        "public_network": 1,
+        "wazuh_high_level": 0,
+        "wazuh_medium_level": 0,
+        "file_drop": 2,
+        "ingress_tool_transfer": 0
+    },
+    "thresholds": {
+        "medium": 3,
+        "high": 6
+    }
+}
