@@ -65,7 +65,7 @@ These gaps are documented as improvement opportunities and should not be conside
 
 ## Documentation
 
-- [Incident Register](incidents/INCIDENT_REGISTER.md)
+- [Incident Register](incidents/README.md)
 - [10-Incident SOC Summary](reports/10-INCIDENT-SOC-SUMMARY.md)
 - [SOC Metrics](reports/SOC_METRICS.md)
 - [Shift Handover](shift-handover/SHIFT_HANDOVER.md)
