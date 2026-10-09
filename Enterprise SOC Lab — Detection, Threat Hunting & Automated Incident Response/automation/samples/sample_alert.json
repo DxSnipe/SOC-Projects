@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-10-08T06:18:30.882+0000",
+  "rule": {
+    "level": 10,
+    "description": "sshd: brute force trying to get access to the system.",
+    "id": "5712",
+    "mitre": {
+      "id": [
+        "T1110"
+      ],
+      "tactic": [
+        "Credential Access"
+      ],
+      "technique": [
+        "Brute Force"
+      ]
+    },
+    "firedtimes": 8,
+    "groups": [
+      "syslog",
+      "sshd",
+      "authentication_failures"
+    ]
+  },
+  "agent": {
+    "id": "000",
+    "name": "example-wazuh-server"
+  },
+  "manager": {
+    "name": "example-wazuh-server"
+  },
+  "id": "example-alert-001",
+  "full_log": "sshd: brute force detected from 192.0.2.50 targeting user test-user",
+  "predecoder": {
+    "program_name": "sshd",
+    "hostname": "example-wazuh-server"
+  },
+  "decoder": {
+    "parent": "sshd",
+    "name": "sshd"
+  },
+  "data": {
+    "srcip": "192.0.2.50",
+    "srcport": "54321",
+    "dstuser": "test-user"
+  },
+  "location": "journald"
+}
