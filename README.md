@@ -21,7 +21,7 @@ An enterprise-inspired SOC lab focused on security monitoring, detection enginee
 - Incident response documentation
 - Investigation reports and security playbooks
 
-**[Explore Enterprise SOC Lab](./)**
+**[Explore Enterprise SOC Lab](./https://github.com/DxSnipe/SOC-Projects/tree/7b4f4e9d73305533ec819167c57356142b4201e9/Enterprise%20SOC%20Lab%20%E2%80%94%20Detection%2C%20Threat%20Hunting%20%26%20Automated%20Incident%20Response)**
 
 ### 2. Phishing Email Investigation
 
