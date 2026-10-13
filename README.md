@@ -1,14 +1,14 @@
-# 🛡️ SOC Projects Portfolio
+# SOC Projects Portfolio
 
 Welcome to my **Security Operations Center (SOC) Projects** repository. This repository documents my hands-on cybersecurity labs and practical investigations focused on security monitoring, threat detection, phishing analysis, detection engineering, and incident response.
 
 My goal is to develop practical skills aligned with the responsibilities of a **SOC Analyst / Security Analyst**, from analyzing security events and identifying suspicious activity to documenting findings and developing detections.
 
-🔗 **GitHub Profile:** [DxSnipe](https://github.com/DxSnipe)
+**GitHub Profile:** [DxSnipe](https://github.com/DxSnipe)
 
 ---
 
-## 📂 Projects
+## Projects
 
 ### 1. Enterprise SOC Lab — Detection, Threat Hunting & Incident Response
 
@@ -22,7 +22,7 @@ An enterprise-inspired SOC lab focused on security monitoring, detection enginee
 - Incident response documentation
 - Investigation reports and security playbooks
 
-🔗 [**Explore Enterprise SOC Lab**](https://github.com/DxSnipe/SOC-Projects/tree/main/Enterprise%20SOC%20Lab%20%E2%80%94%20Detection%2C%20Threat%20Hunting%20%26%20Automated%20Incident%20Response)
+[**Explore Enterprise SOC Lab**](https://github.com/DxSnipe/SOC-Projects/tree/main/Enterprise%20SOC%20Lab%20%E2%80%94%20Detection%2C%20Threat%20Hunting%20%26%20Automated%20Incident%20Response)
 
 ### 2. Phishing Email Investigation
 
@@ -36,7 +36,7 @@ A practical investigation of a suspicious email, focusing on email authenticatio
 - IOC extraction and documentation
 - Incident investigation and reporting
 
-🔗 [**Explore Phishing Email Investigation**](https://github.com/DxSnipe/SOC-Projects/tree/main/Phishing-email-investigation)
+[**Explore Phishing Email Investigation**](https://github.com/DxSnipe/SOC-Projects/tree/main/Phishing-email-investigation)
 
 ### 3. Windows Threat Detection Engineering
 
@@ -51,7 +51,7 @@ A Windows endpoint detection project focused on identifying suspicious activity 
 - MITRE ATT&CK technique mapping
 - Detection validation and alert analysis
 
-🔗 [**Explore Windows Threat Detection Engineering**](https://github.com/DxSnipe/SOC-Projects/tree/main/Windows_Threat_Detection_Engineering_with_Sysmon_%26_Sigma)
+[**Explore Windows Threat Detection Engineering**](https://github.com/DxSnipe/SOC-Projects/tree/main/Windows_Threat_Detection_Engineering_with_Sysmon_%26_Sigma)
 
 ### 4. Windows Brute Force Detection — Wazuh
 
@@ -65,11 +65,11 @@ A defensive security lab focused on detecting and investigating suspicious Windo
 - Detection and investigation workflows
 - Evidence collection and documentation
 
-🔗 [**Explore Windows Brute Force Detection**](https://github.com/DxSnipe/SOC-Projects/tree/main/Windows%20Bruteforce%20Detection%20Wazuh%20)
+[**Explore Windows Brute Force Detection**](https://github.com/DxSnipe/SOC-Projects/tree/main/Windows%20Bruteforce%20Detection%20Wazuh%20)
 
 ---
 
-## 🧰 Technical Skills & Tools
+## Technical Skills & Tools
 
 | Category              | Technologies and Concepts              |
 | --------------------- | -------------------------------------- |
@@ -85,7 +85,7 @@ A defensive security lab focused on detecting and investigating suspicious Windo
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 Through these projects, I aim to strengthen my ability to:
 
@@ -96,16 +96,8 @@ Through these projects, I aim to strengthen my ability to:
 - Map observed behavior to MITRE ATT&CK techniques.
 - Document investigation findings clearly and recommend appropriate defensive actions.
 
-## 📌 Repository Structure
+## Repository Structure
 
 Each project is maintained in its own directory and may include investigation notes, evidence, indicators of compromise, detection rules, screenshots, and reports, depending on the project's scope.
-
-Please refer to each project's documentation for its specific methodology, configuration, findings, and limitations.
-
-## ⚠️ Disclaimer
-
-These projects are intended for cybersecurity education, defensive security research, and authorized lab environments only. Testing should be performed only on systems and networks for which permission has been granted.
-
----
 
 **This repository represents my ongoing hands-on learning journey toward becoming a SOC Analyst, with an emphasis on practical investigation, detection engineering, and incident response.**
